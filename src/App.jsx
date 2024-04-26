@@ -37,9 +37,9 @@ const App = () => {
           },
         ],
       },
-      options: {
-        cutout: 70,
-      },
+      // options: {
+      //   cutout: 70,
+      // },
     });
     setMyChart(chartInstance);
     return () => {
