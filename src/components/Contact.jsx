@@ -31,7 +31,7 @@ export function Contact() {
         const subject = `${enquiryData.subject}`;
         const body = `Name: ${enquiryData.name}%0D%0AEmail:${enquiryData.email}%0D%0A${enquiryData.message}`;
 
-        window.location.href = `mailto:jagannathbehera0244@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:podalbalaram35@gmail.com?subject=${subject}&body=${body}`;
       })}
       id="contact"
       className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
