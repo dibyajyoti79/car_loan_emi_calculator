@@ -133,6 +133,22 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+        <div className="copy-right flex items-center justify-center mt-6">
+          <p>
+            Powered by ❤️{" "}
+            <a
+              href="https://techligator.com/"
+              target="_blank"
+              style={{
+                color: "#2563eb",
+                textDecoration: "none",
+                fontWeight: 600,
+              }}
+            >
+              Techligator
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
