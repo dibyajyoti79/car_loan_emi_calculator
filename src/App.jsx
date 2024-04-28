@@ -6,10 +6,13 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Hero from "./components/Hero";
 import { NumberInput, Select, TextInput } from "@mantine/core";
-import data from "./data/data";
+import { bike_data, car_data } from "./data/data";
 import toast from "react-hot-toast";
+import { Contact } from "./components/Contact";
+import Eligibility from "./components/Eligibility";
 
 const App = () => {
+  const [data, setData] = useState([]);
   const [interestRate, setInterestRate] = useState();
   const [loanTenure, setLoanTenure] = useState();
   const [loanAmount, setLoanAmount] = useState();
@@ -86,6 +89,7 @@ const App = () => {
 
   console.log(result);
 
+  const [vt, setVt] = useState("");
   const [brand, setBrand] = useState("");
   const [model, setModel] = useState("");
   const [price, setPrice] = useState();
@@ -104,6 +108,10 @@ const App = () => {
     return Math.round(emi);
   };
   const handleCalculate = () => {
+    if (!vt) {
+      toast.error("please select the veichle type");
+      return;
+    }
     if (!brand) {
       toast.error("please select the brand");
       return;
@@ -144,6 +152,21 @@ const App = () => {
     setloanAmount(price);
   }, [model]);
 
+  useEffect(() => {
+    if (vt) {
+      setBrand(null);
+      setModelData([]);
+      setModel(null);
+      setPrice("");
+      setloanAmount("");
+      if (vt === "Bike") {
+        setData(bike_data);
+      } else if (vt === "Car") {
+        setData(car_data);
+      }
+    }
+  }, [vt]);
+
   return (
     <>
       <Header />
@@ -151,17 +174,25 @@ const App = () => {
       <div className="loan-calculator" id="emi">
         <div className="top w-full">
           <h2 className="font-bold text-3xl">EMI Calculator</h2>
+          <Select
+            label="Select Veichle Type"
+            placeholder="Choose veichle type"
+            data={["Bike", "Car"]}
+            value={vt}
+            onChange={setVt}
+            className="mb-4"
+          />
           <div className="flex flex-col lg:flex-row md:flex-row lg:items-center md:items-center lg:justify-between md:justify-between">
             <Select
               label="Select Brand"
-              placeholder="Choose a Car Brand"
+              placeholder="Choose Brand"
               data={data.map((item) => item.company)}
               value={brand}
               onChange={setBrand}
             />
             <Select
               label="Select Model"
-              placeholder="Choose a Car Brand"
+              placeholder="Choose Brand"
               data={modelData?.map((item) => item.model_name)}
               value={model}
               onChange={setModel}
@@ -239,6 +270,8 @@ const App = () => {
         </div>
       </div>
       <About />
+      <Eligibility />
+      <Contact />
       <Footer />
     </>
   );

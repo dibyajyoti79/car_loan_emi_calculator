@@ -17,8 +17,8 @@ const Footer = () => {
         </div> */}
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+          Calculate your vehicle's EMI with ease. Drive into financial clarity
+          today. Your journey starts here.
         </p>
 
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">

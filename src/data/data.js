@@ -1,4 +1,4 @@
-const data = [
+const car_data = [
   {
     company: "Maruti Suzuki",
     models: [
@@ -675,4 +675,389 @@ const data = [
     ],
   },
 ];
-export default data;
+
+const bike_data = [
+  {
+    company: "Hero",
+    models: [
+      {
+        model_name: "Splendor Plus",
+        price: "70000",
+      },
+      {
+        model_name: "HF Deluxe",
+        price: "60000",
+      },
+      {
+        model_name: "Passion Pro",
+        price: "75000",
+      },
+      {
+        model_name: "Glamour",
+        price: "80000",
+      },
+      {
+        model_name: "Xtreme 160R",
+        price: "100000",
+      },
+      {
+        model_name: "Xpulse 200",
+        price: "120000",
+      },
+      {
+        model_name: "Super Splendor",
+        price: "75000",
+      },
+      {
+        model_name: "Maestro Edge",
+        price: "80000",
+      },
+      {
+        model_name: "Pleasure Plus",
+        price: "65000",
+      },
+      {
+        model_name: "Destini 125",
+        price: "70000",
+      },
+    ],
+  },
+  {
+    company: "Bajaj",
+    models: [
+      {
+        model_name: "Pulsar 150",
+        price: "90000",
+      },
+      {
+        model_name: "Pulsar NS200",
+        price: "120000",
+      },
+      {
+        model_name: "Dominar 400",
+        price: "200000",
+      },
+      {
+        model_name: "CT 100",
+        price: "50000",
+      },
+      {
+        model_name: "Platina 100",
+        price: "55000",
+      },
+      {
+        model_name: "Avenger Cruise 220",
+        price: "120000",
+      },
+      {
+        model_name: "Avenger Street 160",
+        price: "100000",
+      },
+      {
+        model_name: "Discover 125",
+        price: "65000",
+      },
+      {
+        model_name: "Chetak Electric",
+        price: "150000",
+      },
+    ],
+  },
+  {
+    company: "TVS",
+    models: [
+      {
+        model_name: "Apache RTR 160",
+        price: "95000",
+      },
+      {
+        model_name: "Apache RTR 200",
+        price: "110000",
+      },
+      {
+        model_name: "Jupiter",
+        price: "75000",
+      },
+      {
+        model_name: "NTorq 125",
+        price: "85000",
+      },
+      {
+        model_name: "Radeon",
+        price: "60000",
+      },
+      {
+        model_name: "Star City Plus",
+        price: "70000",
+      },
+      {
+        model_name: "XL100",
+        price: "50000",
+      },
+      {
+        model_name: "Scooty Pep Plus",
+        price: "55000",
+      },
+      {
+        model_name: "Victor",
+        price: "80000",
+      },
+      {
+        model_name: "Zeppelin",
+        price: "130000",
+      },
+    ],
+  },
+  {
+    company: "Honda",
+    models: [
+      {
+        model_name: "Activa 6G",
+        price: "80000",
+      },
+      {
+        model_name: "CB Shine",
+        price: "75000",
+      },
+      {
+        model_name: "SP 125",
+        price: "85000",
+      },
+      {
+        model_name: "Unicorn",
+        price: "95000",
+      },
+      {
+        model_name: "Hornet 2.0",
+        price: "120000",
+      },
+      {
+        model_name: "Dio",
+        price: "70000",
+      },
+      {
+        model_name: "Livo",
+        price: "70000",
+      },
+      {
+        model_name: "Grazia",
+        price: "85000",
+      },
+      {
+        model_name: "X-Blade",
+        price: "90000",
+      },
+      {
+        model_name: "CB500X",
+        price: "500000",
+      },
+    ],
+  },
+  {
+    company: "Yamaha",
+    models: [
+      {
+        model_name: "FZS-FI",
+        price: "100000",
+      },
+      {
+        model_name: "R15 V3",
+        price: "160000",
+      },
+      {
+        model_name: "FZ25",
+        price: "130000",
+      },
+      {
+        model_name: "MT-15",
+        price: "140000",
+      },
+      {
+        model_name: "Fascino",
+        price: "70000",
+      },
+      {
+        model_name: "RayZR 125",
+        price: "75000",
+      },
+      {
+        model_name: "Saluto RX",
+        price: "60000",
+      },
+      {
+        model_name: "SZ-RR",
+        price: "85000",
+      },
+      {
+        model_name: "Aerox 155",
+        price: "120000",
+      },
+    ],
+  },
+  {
+    company: "Suzuki",
+    models: [
+      {
+        model_name: "Access 125",
+        price: "80000",
+      },
+      {
+        model_name: "Burgman Street 125",
+        price: "90000",
+      },
+      {
+        model_name: "Gixxer SF",
+        price: "110000",
+      },
+      {
+        model_name: "Gixxer",
+        price: "100000",
+      },
+      {
+        model_name: "Intruder",
+        price: "120000",
+      },
+      {
+        model_name: "Hayate",
+        price: "60000",
+      },
+      {
+        model_name: "V-Strom 650XT",
+        price: "600000",
+      },
+      {
+        model_name: "GSX-S750",
+        price: "800000",
+      },
+      {
+        model_name: "GSX-R1000",
+        price: "2000000",
+      },
+    ],
+  },
+  {
+    company: "Royal Enfield",
+    models: [
+      {
+        model_name: "Classic 350",
+        price: "180000",
+      },
+      {
+        model_name: "Bullet 350",
+        price: "160000",
+      },
+      {
+        model_name: "Meteor 350",
+        price: "190000",
+      },
+      {
+        model_name: "Himalayan",
+        price: "220000",
+      },
+      {
+        model_name: "Continental GT 650",
+        price: "280000",
+      },
+      {
+        model_name: "Interceptor 650",
+        price: "270000",
+      },
+      {
+        model_name: "Bullet 500",
+        price: "170000",
+      },
+      {
+        model_name: "Thunderbird 350",
+        price: "175000",
+      },
+      {
+        model_name: "Classic 500",
+        price: "190000",
+      },
+    ],
+  },
+  {
+    company: "Kawasaki",
+    models: [
+      {
+        model_name: "Ninja 300",
+        price: "300000",
+      },
+      {
+        model_name: "Z650",
+        price: "600000",
+      },
+      {
+        model_name: "Ninja 650",
+        price: "650000",
+      },
+      {
+        model_name: "Versys 650",
+        price: "700000",
+      },
+      {
+        model_name: "Z900",
+        price: "900000",
+      },
+      {
+        model_name: "Vulcan S",
+        price: "750000",
+      },
+      {
+        model_name: "Ninja 1000SX",
+        price: "1200000",
+      },
+      {
+        model_name: "Versys 1000",
+        price: "1400000",
+      },
+      {
+        model_name: "Z H2",
+        price: "2500000",
+      },
+    ],
+  },
+  {
+    company: "Harley-Davidson",
+    models: [
+      {
+        model_name: "Street 750",
+        price: "500000",
+      },
+      {
+        model_name: "Iron 883",
+        price: "1000000",
+      },
+      {
+        model_name: "Forty-Eight",
+        price: "1100000",
+      },
+      {
+        model_name: "Fat Bob",
+        price: "1500000",
+      },
+      {
+        model_name: "Fat Boy",
+        price: "2000000",
+      },
+      {
+        model_name: "Street Rod",
+        price: "800000",
+      },
+      {
+        model_name: "Roadster",
+        price: "900000",
+      },
+      {
+        model_name: "Pan America",
+        price: "1700000",
+      },
+      {
+        model_name: "LiveWire",
+        price: "2500000",
+      },
+    ],
+  },
+];
+
+export { car_data, bike_data };
